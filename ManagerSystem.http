@@ -1,0 +1,32 @@
+### admin addUser
+POST http://localhost:8080/admin/addUser
+Authorization: ewogICAgInVzZXJJZCI6IDEyMzQ1NiwKICAgICJhY2NvdW50TmFtZSI6ICJYWFhYWFhYIiwKICAgICJyb2xlIjogImFkbWluIgp9
+Content-Type: application/json
+
+{
+    "userId":123456,
+    "endpoint":[
+        "resource A",
+        "resource B",
+        "resource C"
+    ]
+}
+
+### user addUser
+POST http://localhost:8080/admin/addUser
+Authorization: ewogICAgInVzZXJJZCI6IDEyMzQ1NywKICAgICJhY2NvdW50TmFtZSI6ICJYWFhYWFhYIiwKICAgICJyb2xlIjogInVzZXIiCn0=
+Content-Type: application/json
+
+{
+    "userId":123456,
+    "endpoint":[
+        "resource A",
+        "resource B",
+        "resource C"
+    ]
+}
+
+
+###
+GET http://localhost:8080/user/resource%20A
+Authorization: ewogICAgInVzZXJJZCI6IDEyMzQ1NiwKICAgICJhY2NvdW50TmFtZSI6ICJYWFhYWFhYIiwKICAgICJyb2xlIjogImFkbWluIgp9
